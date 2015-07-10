@@ -7,7 +7,7 @@ exports.serverid = 'pokecommunity';
 exports.servertoken = 'filler';
 
 // The server port - the port to run Pokemon Showdown under
-exports.port = 8000;
+exports.port = 80;
 
 // proxyip - proxy IPs with trusted X-Forwarded-For headers
 //   This can be either false (meaning not to trust any proxies) or an array
@@ -580,6 +580,13 @@ exports.replsocketmode = 0600;
 //     - tournamentsmoderation: /tour dq, autodq, end etc.
 //     - tournamentsmanagement: enable/disable tournaments.
 exports.grouplist = [
+	{
+		symbol: '?',
+		id: "admin",
+		name: "Hoster",
+		root: true,
+		globalonly: true
+	},
 	{
 		symbol: '~',
 		id: "admin",
